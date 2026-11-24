@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" data-motion="on" data-theme="ember">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joey | QA engineer</title>
+    <meta name="description" content="Portfolio of Joey: QA engineer working on test strategy, automation and CI/CD.">
+    <meta name="theme-color" content="#180000">
+    <script>
+        (function () {
+            var themes = ['ember', 'paper', 'signal'];
+            var saved = null;
+            try { saved = localStorage.getItem('theme'); } catch (e) {}
+            var light = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+            document.documentElement.dataset.theme = themes.indexOf(saved) > -1 ? saved : (light ? 'paper' : 'ember');
+        })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="modern.css">
+</head>
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="progress" aria-hidden="true"><span></span></div>
+    <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+    <div class="preview" aria-hidden="true"><img alt="" src="photo-1.jpg"></div>
+
+    <header class="site-header">
+        <a class="brand" href="#top" data-scramble>Joey</a>
+        <nav class="nav" aria-label="Main">
+            <a href="#work" data-scramble>Work</a>
+            <a href="#about" data-scramble>About</a>
+            <a href="#skills" data-scramble>Skills</a>
+            <a href="#contact" data-scramble>Contact</a>
+        </nav>
+        <div class="theme-switch" role="group" aria-label="Theme">
+            <button class="theme-switch__btn" type="button" data-theme-set="ember" style="--swatch: #C07854" aria-pressed="true"><span class="theme-switch__label">Ember</span></button>
+            <button class="theme-switch__btn" type="button" data-theme-set="paper" style="--swatch: #A63F27" aria-pressed="false"><span class="theme-switch__label">Paper</span></button>
+            <button class="theme-switch__btn" type="button" data-theme-set="signal" style="--swatch: #6EF3A5" aria-pressed="false"><span class="theme-switch__label">Signal</span></button>
+        </div>
+        <span class="status"><i class="status__dot" aria-hidden="true"></i>Open to QA roles</span>
+    </header>
+
+    <main id="main">
+        <section class="hero" id="top">
+            <div class="hero__main">
+                <p class="label reveal-up">Portfolio / 2026</p>
+
+                <h1 class="hero__title">
+                    <span class="line"><span style="--i: 0">Quality</span></span>
+                    <span class="line"><span style="--i: 1">by <em>design</em></span></span>
+                </h1>
+
+                <div class="hero__text reveal-up">
+                    <p class="lead">Hi, I'm Joey. Ten years as an engineer across many industries, now focused on test strategy, automation and the pipelines that run them.</p>
+                    <div class="hero__cta">
+                        <a class="btn btn--solid" href="#work" data-cursor="Go">See my work <span aria-hidden="true">&rarr;</span></a>
+                        <a class="btn" href="#contact">Get in touch</a>
+                    </div>
+                </div>
+
+                <dl class="hero__meta reveal-up">
+                    <div><dt class="label">Role</dt><dd>QA engineer</dd></div>
+                    <div><dt class="label">Focus</dt><dd>Automation, CI/CD, performance</dd></div>
+                    <div><dt class="label">Currently</dt><dd>Building a Jenkins to Argo CD pipeline</dd></div>
+                </dl>
+            </div>
+
+            <figure class="sequence reveal-up" data-cursor="Move">
+                <div class="sequence__frames" data-parallax="0.08">
+                    <img src="photo-1.jpg" alt="Placeholder picture 1: replace with your own photo" width="800" height="1000">
+                    <img src="photo-2.jpg" alt="Placeholder picture 2" width="800" height="1000">
+                    <img src="photo-3.jpg" alt="Placeholder picture 3" width="800" height="1000">
+                    <img src="photo-4.jpg" alt="Placeholder picture 4" width="800" height="1000">
+                </div>
+                <figcaption class="label">
+                    <span class="sequence__count">01 / 04</span>
+                    <span class="sequence__hint">Move over the picture</span>
+                </figcaption>
+            </figure>
+        </section>
+
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee__track">
+                <div class="marquee__group">
+                    <span>Cucumber</span><span>Selenium</span><span>Vitest</span><span>k6</span><span>Jenkins</span><span>SonarQube</span><span>Docker</span><span>Kubernetes</span><span>Argo CD</span>
+                </div>
+                <div class="marquee__group">
+                    <span>Cucumber</span><span>Selenium</span><span>Vitest</span><span>k6</span><span>Jenkins</span><span>SonarQube</span><span>Docker</span><span>Kubernetes</span><span>Argo CD</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="section" id="work">
+            <div class="section__head">
+                <h2 class="h2 reveal-up">Selected <em>work</em></h2>
+                <p class="label reveal-up">(01) Projects</p>
+            </div>
+
+            <div class="rows">
+                <a class="row reveal-up" href="#" data-img="photo-1.jpg" data-cursor="View" data-cursor-theme="deep">
+                    <span class="row__n">01</span>
+                    <span class="row__title">Pokapi</span>
+                    <span class="row__meta">API + gallery &middot; Express &middot; Vitest</span>
+                    <span class="row__year">2026</span>
+                </a>
+                <a class="row reveal-up" href="#" data-img="photo-2.jpg" data-cursor="View" data-cursor-theme="deep">
+                    <span class="row__n">02</span>
+                    <span class="row__title">CI/CD pipeline</span>
+                    <span class="row__meta">Jenkins &middot; Argo CD &middot; Kubernetes</span>
+                    <span class="row__year">2026</span>
+                </a>
+                <a class="row reveal-up" href="#" data-img="photo-3.jpg" data-cursor="View" data-cursor-theme="deep">
+                    <span class="row__n">03</span>
+                    <span class="row__title">Performance tests</span>
+                    <span class="row__meta">k6 &middot; thresholds &middot; reports</span>
+                    <span class="row__year">2026</span>
+                </a>
+                <a class="row reveal-up" href="#" data-img="photo-4.jpg" data-cursor="View" data-cursor-theme="deep">
+                    <span class="row__n">04</span>
+                    <span class="row__title">Test strategy</span>
+                    <span class="row__meta">Quality gates &middot; risk analysis</span>
+                    <span class="row__year">2026</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="hscroll" id="process" aria-label="How I work">
+            <div class="hscroll__pin">
+                <div class="hscroll__head">
+                    <p class="label">(02) Process</p>
+                    <h2 class="h2">How I <em>work</em></h2>
+                </div>
+                <div class="hscroll__track">
+                    <article class="panel">
+                        <span class="panel__n">01</span>
+                        <h3>Understand the risk</h3>
+                        <p>Before writing a test, I ask what could hurt users or the business most, and where the system is most likely to fail.</p>
+                        <img data-swap="0" src="photo-1.jpg" alt="" loading="lazy">
+                    </article>
+                    <article class="panel">
+                        <span class="panel__n">02</span>
+                        <h3>Automate the checks</h3>
+                        <p>Unit, API and end-to-end tests at the right layer, written to run on every commit, not once before a release.</p>
+                        <img data-swap="1" src="photo-2.jpg" alt="" loading="lazy">
+                    </article>
+                    <article class="panel">
+                        <span class="panel__n">03</span>
+                        <h3>Gate the pipeline</h3>
+                        <p>Quality gates, security scans and a smoke test stop a bad build before it reaches the registry or the cluster.</p>
+                        <img data-swap="2" src="photo-3.jpg" alt="" loading="lazy">
+                    </article>
+                    <article class="panel">
+                        <span class="panel__n">04</span>
+                        <h3>Measure and learn</h3>
+                        <p>Load tests, thresholds and dashboards show how a build behaves under pressure, and feed the next round of tests.</p>
+                        <img data-swap="3" src="photo-4.jpg" alt="" loading="lazy">
+                    </article>
+                </div>
+                <div class="hscroll__bar" aria-hidden="true"><span></span></div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="section__head">
+                <p class="label reveal-up">(03) About</p>
+            </div>
+            <div class="about">
+                <p class="about__text reveal-up">
+                    I make sure software does what it <em>promises</em>. <span class="dim">I started in engineering, moved into quality, and now build the tests, quality gates and pipelines that catch problems before users do.</span>
+                </p>
+                <div class="about__side">
+                    <div class="cube-wrap" aria-hidden="true" data-parallax="0.12">
+                        <div class="cube" data-cube>
+                            <div class="cube__face cube__face--front">Plan</div>
+                            <div class="cube__face cube__face--back">Ship</div>
+                            <div class="cube__face cube__face--right">Test</div>
+                            <div class="cube__face cube__face--left">Learn</div>
+                            <div class="cube__face cube__face--top">Gate</div>
+                            <div class="cube__face cube__face--bottom">Watch</div>
+                        </div>
+                    </div>
+                    <ul class="stats">
+                    <li class="reveal-up"><strong>10+</strong><span>Years as an engineer</span></li>
+                    <li class="reveal-up"><strong>11</strong><span>Stages in my CI/CD pipeline</span></li>
+                    <li class="reveal-up"><strong>500</strong><span>Simulated users in my last load test</span></li>
+                </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="section__head">
+                <h2 class="h2 reveal-up">What I <em>use</em></h2>
+                <p class="label reveal-up">(04) Skills</p>
+            </div>
+            <div class="skills">
+                <article class="skill-card reveal-up">
+                    <h3>Testing</h3>
+                    <ul><li>Cucumber (BDD)</li><li>Selenium</li><li>Vitest and Supertest</li><li>k6 performance tests</li></ul>
+                </article>
+                <article class="skill-card reveal-up">
+                    <h3>Pipeline</h3>
+                    <ul><li>Jenkins</li><li>SonarQube</li><li>OWASP Dependency-Check</li><li>Trivy</li></ul>
+                </article>
+                <article class="skill-card reveal-up">
+                    <h3>Platform</h3>
+                    <ul><li>Docker</li><li>Kubernetes</li><li>Argo CD (GitOps)</li><li>Cloudflare Tunnel</li></ul>
+                </article>
+                <article class="skill-card reveal-up">
+                    <h3>Backend</h3>
+                    <ul><li>Node.js and Express</li><li>Zod validation</li><li>Helmet, rate limiting</li><li>PostgreSQL (next)</li></ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <p class="label reveal-up">(05) Contact</p>
+            <a class="contact__link reveal-up" href="mailto:hello@example.com" data-cursor="Write" data-scramble>Let's talk</a>
+            <div class="contact__meta reveal-up">
+                <a href="mailto:hello@example.com">hello@example.com</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span class="label">&copy; 2026 Joey</span>
+        <button class="pause" type="button" aria-pressed="false" aria-label="Reduce motion" title="Turns off the animations on this page">Reduce motion: off</button>
+        <a class="label" href="#top">Back to top</a>
+    </footer>
+
+    <script src="modern.js"></script>
+</body>
+</html>
